@@ -4,12 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 - Course Page </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
-<h1>WDD 231 - Vena </h1>
 
 <body>
+    <header>
+        <img src="images/e-learning.svg" alt="Site logo" width="512" height="512">
+        <span>WDD 231 - Course Home Page</span>
+        <button id="ham-btn" class="hamburger"></button>
+        <!-- <button id="ham-btn" class="hamburger" aria-label="navigation"></button> -->
+    </header>
 
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="about-card">
+            <h2>About Me</h2>
+            <p>Hi, I'm Ediomo! I am a web development student passionate about creating clean, responsive, and
+                user-friendly digital experiences. When I'm not coding or designing layouts, I enjoy exploring new
+                technologies and learning about frontend design trends. Welcome to my portal page for WDD 231!</p>
+        </section>
+
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/student_photo.webp" alt="Ediomo Ibanga's profile">
+        </section>
+        <section class=" courses-card">
+            <h2>Web Certificate Courses</h2>
+            <p>The Web and Computer Programming certificate focuses on building foundational skills in modern software
+                development. The dynamic catalog below showcases the core courses required for this program. You can
+                filter the courses by department using the buttons, and see which ones I have already completed
+                highlighted in a different style!</p>
+
+            <div class="filters">
+                <button id="all-btn">All</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
+            </div>
+            <div id="course-container" class="course-grid"></div>
+
+            <!-- Total Credits Tracker -->
+            <p class="credits-total">Total Credits: <span id="total-credits">0</span></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank">
+                <img src="images/github.svg" alt="github logo">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin-circle.svg" alt="linkedin logo">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter-alt-circle.svg" alt="twitter logo">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Vena-Media | Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
