@@ -225,7 +225,7 @@ footer {
 }
 
 footer img {
-    /* display: flex; */
+
     width: 28px;
     height: 28px;
     transition: transform 0.2s ease;
@@ -243,10 +243,10 @@ footer p {
 }
 
 .social-links {
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px !important;
+    gap: 20px;
 }
 
 .social-links a {
@@ -256,7 +256,6 @@ footer p {
 .social-links img,
 .social-links svg {
     width: 28px;
-    /* Perfect touch/click size */
     height: 28px;
     display: block;
     transition: transform 0.2s ease;
