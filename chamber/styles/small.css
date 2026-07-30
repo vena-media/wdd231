@@ -1,0 +1,156 @@
+:root {
+    --primary-gold: #ffc107;
+    --primary-green: #0bb31f;
+    --deep-green: #298234;
+    --header-cream: #fff2cc;
+
+    --bg-warm-cream: #FDFBF7;
+    --bg-card: #f8efd3;
+    --text-charcoal: #222222;
+    --border-color: #0bb31f;
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-charcoal);
+    background-color: var(--bg-warm-cream);
+    padding: 2rem;
+    margin: 0;
+}
+
+header img,
+.logo img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 3fr, 1fr;
+    background-color: var(--deep-green);
+    color: black;
+    padding: 1rem;
+    border: 7rem;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+/* header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+} */
+
+.logo {
+    display: flex;
+    padding: 1.5rem;
+    width: 500px;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#primary-nav.open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--deep-green);
+    padding: 1rem 0;
+    z-index: 100;
+}
+
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active {
+    border-bottom: 2px solid white;
+}
+
+
+
+/* Controls Container */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+    gap: 10px;
+}
+
+.toggle-container button {
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.toggle-container button.active {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* ==========================================================================
+   Mobile-First Layout Rules (No horizontal scrolling)
+   ========================================================================== */
+
+/* 1. GRID LAYOUT (Mobile Default: Single Column Stack) */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.grid-layout .member-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.grid-layout .member-card img {
+    display: block;
+    margin: 0 auto 1rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.list-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.list-layout .member-card {
+    display: flex;
+    flex-direction: column;
+    /* Stacked text blocks on mobile list view */
+    background-color: var(--bg-card);
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.list-layout .member-card img {
+    display: none;
+}
+
+footer {
+    margin-top: 5rem;
+}

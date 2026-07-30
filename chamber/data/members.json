@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Eko Atlantic Tech Hub",
+        "address": "1 Victoria Island Blvd, Lagos",
+        "phone": "+234 1 234 5678",
+        "website": "https://ekoatlantic.com",
+        "image": "eko-tech.png",
+        "membership": 3,
+        "description": "Leading tech incubator and co-working space in Victoria Island."
+    },
+    {
+        "name": "Lekki Logistics & Freight",
+        "address": "45 Admiralty Way, Lekki Phase 1, Lagos",
+        "phone": "+234 1 876 5432",
+        "website": "https://lekkilogistics.ng",
+        "image": "lekki-logistics.png",
+        "membership": 2,
+        "description": "Premier supply chain and shipping services across West Africa."
+    },
+    {
+        "name": "Ikeja Solar Solutions",
+        "address": "12 Mobolaji Bank Anthony Way, Ikeja, Lagos",
+        "phone": "+234 1 555 0192",
+        "website": "https://ikejasolar.ng",
+        "image": "ikeja-solar.png",
+        "membership": 1,
+        "description": "Clean energy systems and solar installations for businesses."
+    },
+    {
+        "name": "Danfo Creative Agency",
+        "address": "8 Commercial Avenue, Sabo Yaba, Lagos",
+        "phone": "+234 1 333 4455",
+        "website": "https://danfocreative.com",
+        "image": "danfo-creative.png",
+        "membership": 2,
+        "description": "Branding, digital marketing, and web development agency."
+    },
+    {
+        "name": "Third Mainland Legal Partners",
+        "address": "9 Marina Street, Lagos Island, Lagos",
+        "phone": "+234 1 999 8877",
+        "website": "https://3rdmainlandlaw.ng",
+        "image": "legal-partners.png",
+        "membership": 3,
+        "description": "Corporate law, trade regulations, and business advisory."
+    },
+    {
+        "name": "Zuma Bank & Finance",
+        "address": "100 Broad Street, Lagos Island, Lagos",
+        "phone": "+234 1 777 6655",
+        "website": "https://zumabank.ng",
+        "image": "zuma-bank.png",
+        "membership": 3,
+        "description": "Commercial banking, SME loans, and investment services."
+    },
+    {
+        "name": "Naija Artisans Co-op",
+        "address": "22 Allen Avenue, Ikeja, Lagos",
+        "phone": "+234 1 222 1100",
+        "website": "https://naijaartisans.org",
+        "image": "artisans-coop.png",
+        "membership": 1,
+        "description": "Connecting local craftsmen and manufacturing businesses."
+    }
+]
