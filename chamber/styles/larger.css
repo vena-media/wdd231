@@ -17,4 +17,40 @@
     footer {
         color: black;
     }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        /* Events gets 2 parts, Weather gets 1 part */
+        grid-template-areas:
+            "events weather"
+            "spotlights spotlights";
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .events {
+        grid-area: events;
+    }
+
+    .weather {
+        grid-area: weather;
+    }
+
+    .spotlights {
+        grid-area: spotlights;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .cta-button {
+        padding: 2rem 3rem;
+        border-radius: 2px;
+        font-weight: 600;
+        font-size: 2rem;
+
+    }
+
+
 }
