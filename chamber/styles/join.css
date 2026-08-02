@@ -1,0 +1,191 @@
+/* Main Layout Grid */
+
+
+@media (min-width: 768px) {
+    .join-container {
+        grid-template-columns: 3fr 2fr;
+        /* Form takes 60%, Cards take 40% */
+    }
+}
+
+.join-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+
+.join-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95rem;
+    gap: 0.4rem;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.join-form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.2);
+}
+
+.join-form input:required:valid,
+.join-form textarea:required:valid {
+    border-left: 4px solid #28a745;
+}
+
+/* Radio Group Fieldset */
+.join-form fieldset {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.join-form legend {
+    font-weight: 700;
+    color: #2c3e50;
+    padding: 0 0.5rem;
+}
+
+.join-form fieldset label {
+    flex-direction: row;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.join-form fieldset input[type="radio"] {
+    margin-right: 0.5rem;
+    accent-color: #0056b3;
+}
+
+/* Submit Button */
+.join-form input[type="submit"] {
+    background-color: #ffc107;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 1rem;
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: #28a745;
+}
+
+.join-form input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.membership-card {
+    background: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #28a745;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+
+    opacity: 0;
+    animation: cardSlideUp 0.6s ease-out forwards;
+}
+
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+.membership-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2d9144;
+}
+
+.membership-card button {
+    background-color: transparent;
+    color: #28a745;
+    border: 1px solid #2d9144;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.membership-card button:hover {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+/* Keyframe definition */
+@keyframes cardSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

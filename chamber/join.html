@@ -4,31 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Chamber of Commerce</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="">
-    <script src="scripts/main.js" defer></script>
+    <title>Lagos Chamber of Commerce - Join</title>
+    <meta name="description" content="Chamber of Commerce Business Join page highlighting local members.">
+    <meta name="author" content="Ediomo Ibanga">
+    <link rel="icon" href="images/lcc-favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <meta property="og:title" content="Lagos Chamber of Commerce Join Page">
+    <meta property="og:description" content="Join other local businesses and partners in our Chamber directory.">
+    <meta property="og:image" content="https://vena-media.github.io/wdd231/chamber/images/share-image.jpg">
+    <meta property="og:url" content="https://vena-media.github.io/wdd231/chamber/join.html">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
 </head>
 
 <body>
     <header>
-        <h1>Santorini, Greece Chamber of Commerce </h1>
+        <div class="logo-box">
+            <img src="images/lcc-logo-main.png" alt="Lagos Chamber of Commerce Logo" class="logo">
+        </div>
+        <button id="hamburger-btn" aria-label="Toggle navigation Menu">☰</button>
+        <nav>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <form method="get" action="thankyou.html" class="join-form">
 
-    <nav id="nav-bar" class="navigation">
-        <li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li></li><a href="directory.html">Directory</a></li>
-        <li class="current"><a href="join.html">Join</a></li>
-        </ul>
-    </nav>
+            <label for="fname">
+                First Name *
+                <input type="text" id="fname" name="fname" required title="Enter your first name"
+                    autocomplete="given-name">
+            </label>
+
+            <label for="lname">
+                <input type="text" id="lname" name="lname" required title="Enter your last name"
+                    autocomplete="family-name">
+            </label>
+
+            <label for="title">
+
+                <input type="text" id="title" name="title"
+                    title="Title must contain at least 7 characters (letters, spaces, and hyphens only)"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+            </label>
+
+            <label for="email">
+                <input type="email" id="email" name="email" required title="Enter a valid email address"
+                    autocomplete="email" placeholder="example@domain.com">
+            </label>
+
+            <label for="phone">
+                <input type="tel" id="phone" name="phone" required title="Enter your mobile phone number"
+                    autocomplete="tel">
+            </label>
+
+            <label for="organization">
+                <input type="text" id="organization" name="organization" required title="Enter your organization name"
+                    autocomplete="organization">
+            </label>
+
+            <fieldset>
+                <legend>Membership Level *</legend>
+                <label>
+                    <input type="radio" name="membership" value="np" required> NP Membership (Non-Profit - Free)
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="bronze"> Bronze Membership
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="silver"> Silver Membership
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="gold"> Gold Membership
+                </label>
+            </fieldset>
+
+            <label for="description">
+                Business / Organization Description
+                <textarea id="description" name="description"
+                    title="Enter a brief description of your organization"></textarea>
+            </label>
+
+            <!-- Hidden Timestamp Field -->
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" value="Complete Application">
+        </form>
+
+        <!-- Example Card -->
+        <div class="card membership-card">
+            <h3>Gold Membership</h3>
+            <button id="open-gold">Learn More</button>
+        </div>
+
+        <!-- Example Dialog Modal -->
+        <dialog id="modal-gold">
+            <h2>Gold Level Benefits</h2>
+            <p>Includes top-tier advertising spotlights, event discounts, and VIP networking access.</p>
+            <button id="close-gold">Close</button>
+        </dialog>
+    </main>
+
+
 
     <footer>
-        <p> © 2026 Vena-Media - WDD231 </p>
+        <div class="footer-contact">
+            <p> ➡️ 10 Commercial Avenue, Sabo Yaba, Lagos</p>
+            <p> ☎️ +234 701 8840 789| info@lagoschamber.org</p>
+        </div>
+        <hr>
+        <div class="footer-dev">
+            <p>&copy; <span id="year"></span> | Ediomo Ibanga| WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
     </footer>
 </body>
 
