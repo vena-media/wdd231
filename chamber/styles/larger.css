@@ -7,6 +7,19 @@
 
     }
 
+    .grid-layout .member-card {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .grid-layout .member-card img {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+        margin: 0 auto 0 0;
+    }
+
     .logo-box img {
         padding: 1rem 1rem;
         max-height: 80px;
