@@ -107,7 +107,7 @@ nav a.active {
     background-color: var(--header-cream);
     padding: 0.5rem 1.5rem;
     border-radius: 3px;
-    color: #298234;
+    color: #1f6528;
     font-weight: 600;
 
 }
@@ -183,7 +183,6 @@ nav a:focus::after {
 .list-layout .member-card {
     display: flex;
     flex-direction: column;
-    /* Stacked text blocks on mobile list view */
     background-color: var(--bg-card);
     padding: 1rem;
     border: 1px solid var(--border-color);
