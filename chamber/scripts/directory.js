@@ -2,9 +2,6 @@ const url = 'data/members.json';
 const container = document.getElementById('directory-container');
 const gridBtn = document.getElementById('view-grid');
 const listBtn = document.getElementById('view-list');
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const primaryNav = document.getElementById('primary-nav');
-
 // 1. Fetch JSON Member Data
 async function getMembers() {
     try {
@@ -60,9 +57,7 @@ listBtn.addEventListener('click', () => {
     gridBtn.classList.remove('active-btn');
 });
 
-hamburgerBtn.addEventListener('click', () => {
-    primaryNav.classList.toggle('open');
-});
+
 
 // 4. Dynamic Footer Dates
 document.getElementById('year').textContent = new Date().getFullYear();

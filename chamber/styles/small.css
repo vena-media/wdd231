@@ -36,7 +36,7 @@ header {
     border: 7rem;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 97.5%;
 }
 
 
@@ -49,7 +49,7 @@ header {
 }
 
 .logo-box img {
-    padding: 1rem -1rem;
+    padding: 1rem 0;
     max-height: 50px;
     width: auto;
 }
@@ -65,10 +65,20 @@ nav ul {
 }
 
 #hamburger-btn {
-    padding: 0.25rem 0.5rem 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    line-height: 1;
+    padding: 0.5rem;
+    color: white;
+    outline: none;
     margin-right: 0.5rem;
-    font-size: 1.5rem;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#hamburger-btn.open {
+    transform: rotate(180deg) scale(1.1);
 }
 
 #primary-nav.open {
@@ -88,14 +98,14 @@ nav a {
     padding: 1rem;
     color: #ffffff;
     text-decoration: none;
-    font-weight: semi-bold;
+    font-weight: 600;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
 nav a.active {
     background-color: var(--header-cream);
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 3px;
     color: #298234;
     font-weight: 600;
@@ -106,7 +116,11 @@ nav a.active {
 
 nav a:hover,
 nav a:focus {
-    color: #ffc107;
+    background-color: var(--primary-gold);
+    color: #0bb31f;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+
 }
 
 nav a:hover::after,

@@ -17,6 +17,14 @@
         display: none;
     }
 
+    #primary-nav,
+    #primary-nav.open {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+    }
+
     nav ul {
         display: flex;
         flex-direction: row;

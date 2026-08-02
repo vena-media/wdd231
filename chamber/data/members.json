@@ -18,11 +18,11 @@
         "description": "Premier supply chain and shipping services across West Africa."
     },
     {
-        "name": "Ikeja Solar Solutions",
+        "name": "Olitech Solar Solutions",
         "address": "12 Mobolaji Bank Anthony Way, Ikeja, Lagos",
         "phone": "+234 1 555 0192",
-        "website": "https://ikejasolar.ng",
-        "image": "ikeja-solar.png",
+        "website": "https://olitechsolar.com.ng",
+        "image": "olitech-solar-solutions.png",
         "membership": 1,
         "description": "Clean energy systems and solar installations for businesses."
     },
@@ -57,8 +57,8 @@
         "name": "Naija Artisans Co-op",
         "address": "22 Allen Avenue, Ikeja, Lagos",
         "phone": "+234 1 222 1100",
-        "website": "https://naijaartisans.org",
-        "image": "artisans-coop.png",
+        "website": "https://artisans.coop",
+        "image": "naija-artisans.png",
         "membership": 1,
         "description": "Connecting local craftsmen and manufacturing businesses."
     }
