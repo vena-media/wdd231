@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+    #hamburger-btn {
+        display: none;
+    }
+
+    #nav-menu {
+        display: block !important;
+        position: static;
+        width: auto;
+        border: none;
+        background: none;
+    }
+
+    #nav-menu ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    #nav-menu a {
+        padding: 0.5rem 0;
+        border: none;
+    }
+
+    #nav-menu a.active {
+        border-bottom: 2px solid var(--primary);
+        background: none;
+    }
+}
+
+
+@media (min-width: 640px) {
+    .job-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .job-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
