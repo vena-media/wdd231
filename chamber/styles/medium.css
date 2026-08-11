@@ -9,21 +9,18 @@
             "photo desc"
             "photo address"
             "photo btn";
+
+        gap: 0.2rem .5rem;
     }
 
-    .discover-card {
-        background-color: var(--bg-card);
-        border: 1px solid var(--border-color);
-        border-radius: 5px;
-        padding: 1.5rem;
-        align-items: center;
-    }
 
     .discover-card figure {
         width: 300px;
         margin: 1rem;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
     }
 }
