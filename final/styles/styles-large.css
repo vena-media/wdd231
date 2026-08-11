@@ -4,8 +4,10 @@
     }
 
     #nav-menu {
-        display: block !important;
+        display: block;
         position: static;
+        top: auto;
+        left: auto;
         width: auto;
         border: none;
         background: none;

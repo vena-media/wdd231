@@ -38,7 +38,7 @@ function renderJobs(jobs) {
         const isSaved = savedIds.includes(job.id);
         return `
       <article class="job-card">
-        <h3>${job.title}</h3>
+        <h2>${job.title}</h2>
         <p class="company">${job.company}</p>
         <p class="location">📍 ${job.location} • ${job.type}</p>
         <p class="salary">💰 ${job.salary}</p>

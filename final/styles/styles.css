@@ -12,11 +12,11 @@
     /* Neon cyan primary */
     --primary-hover: #0284c7;
     /* Darker cyan hover */
-    --accent: #a855f7;
+    --accent: #d7b5f8;
     /* Purple accent */
     --text-main: #f8fafc;
     /* High contrast white text */
-    --text-muted: #94a3b8;
+    --text-muted: #bdcadc;
     --danger: #ef4444;
     --font-family: 'Inter', system-ui, -apple-system, sans-serif;
 
@@ -76,12 +76,6 @@ header {
 }
 
 .logo-title {
-    font-size: 1.4rem;
-    color: var(--primary);
-    font-weight: 700;
-}
-
-.logo h1 {
     font-size: 1.4rem;
     color: var(--primary);
     font-weight: 700;
@@ -218,6 +212,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    min-height: 60vh;
 }
 
 @media (min-width: 640px) {
@@ -248,7 +243,7 @@ main {
     border-color: var(--primary);
 }
 
-.job-card h3 {
+.job-card h2 {
     font-size: 1.2rem;
     color: var(--text-main);
     margin-bottom: 0.25rem;
