@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 64rem) {
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -85,10 +85,18 @@
 
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 64rem) {
         .join-container {
             grid-template-columns: 2fr 1fr;
         }
+    }
+
+    #discover-grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 1rem;
+        gap: 2rem;
     }
 
 }

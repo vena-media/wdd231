@@ -304,9 +304,71 @@ nav a:focus::after {
     padding: 1.25rem;
 }
 
+#discover-grid {
+
+    display: grid;
+    padding: 1rem 1rem;
+    gap: 2rem;
+}
+
+.discover-card {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "photo"
+        "desc"
+        "address"
+        "btn";
+}
+
+.discover-card h2 {
+    grid-area: title;
+}
+
+.discover-card figure {
+    width: 100%;
+    grid-area: photo;
+}
+
+.discover-card p {
+    grid-area: desc;
+}
+
+.discover-card button {
+    grid-area: btn;
+}
+
+.discover-card address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
 
 
 
+.discover-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.discover-card figure {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.discover-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
 
 
 footer {

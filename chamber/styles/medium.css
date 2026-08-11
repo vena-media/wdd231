@@ -1,0 +1,29 @@
+@media (min-width: 38rem) {
+
+
+
+    .discover-card {
+
+        grid-template-areas:
+            "photo title"
+            "photo desc"
+            "photo address"
+            "photo btn";
+    }
+
+    .discover-card {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        padding: 1.5rem;
+        align-items: center;
+    }
+
+    .discover-card figure {
+        width: 300px;
+        margin: 1rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+}
