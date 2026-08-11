@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHub | Submission Received</title>
+
+    <meta name="description" content="Thank you for your submission to DevHub.">
+    <meta name="author" content="Your Name">
+    <link rel="favicon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="module" src="./scripts/thanks.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <h1>DevHub</h1>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Navigation Menu">☰</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Jobs</a></li>
+                    <li><a href="saved.html">Saved Jobs</a></li>
+                    <li><a href="submit.html">Post/Apply</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Submission Received! 🎉</h2>
+            <p>Thank you for submitting your entry. Here is a summary of the data received:</p>
+        </section>
+
+        <div class="form-container" id="response-container">
+            <!-- Data populated by thanks.js -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> DevHub | WDD 231 Final Project</p>
+        <p>
+            <a href="attributions.html">Attributions</a> |
+            <a href="https://youtube.com/your-video-link" target="_blank" rel="noopener">Project Video Demo</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

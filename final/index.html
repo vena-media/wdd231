@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHub | Junior Developer Job Board</title>
+
+
+    <meta name="description"
+        content="DevHub is a curated job board and tech resource designed for junior frontend developers and software engineering interns.">
+    <meta name="author" content="Your Name">
+    <link rel="favicon" href="favicon.ico">
+
+
+    <meta property="og:title" content="DevHub | Tech Job Board">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://vena-media.github.io/wdd231/final/">
+    <meta property="og:description"
+        content="Explore junior developer jobs, save positions, and jumpstart your software engineering career.">
+
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+
+    <script type="module" src="./scripts/main.js"></script>
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <h1>DevHub</h1>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Navigation Menu">☰</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Jobs</a></li>
+                    <li><a href="saved.html">Saved Jobs</a></li>
+                    <li><a href="submit.html">Post/Apply</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <h2>Kickstart Your Frontend Career</h2>
+            <p>Explore entry-level web development, UI design, and engineering roles.</p>
+        </section>
+
+
+        <section class="controls">
+            <label for="filter-location">Filter by Location:</label>
+            <select id="filter-location">
+                <option value="all">All Locations</option>
+                <option value="remote">Remote</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="on-site">On-site</option>
+            </select>
+        </section>
+
+
+        <section id="job-container" class="job-grid">
+            <!-- Dynamically populated via main.js -->
+        </section>
+
+
+        <dialog id="job-modal">
+            <button id="close-modal" aria-label="Close Modal">&times;</button>
+            <div id="modal-body">
+                <!-- Content dynamically injected via modal.js -->
+            </div>
+        </dialog>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="year"></span> DevHub | WDD 231 Final Project</p>
+        <p>
+            <a href="attributions.html">Attributions</a> |
+            <a href="https://youtube.com/your-video-link" target="_blank" rel="noopener">Project Video Demo</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

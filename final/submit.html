@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHub | Submit Job or Application</title>
+
+    <meta name="description"
+        content="Submit a new junior web development job listing or post your developer candidate profile on DevHub.">
+    <meta name="author" content="Your Name">
+    <link rel="favicon" href="favicon.ico">
+
+    <meta property="og:title" content="DevHub | Submit Entry">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/final/submit.html">
+    <meta property="og:description" content="Post a job listing or register as a developer candidate.">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <h1>DevHub</h1>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Navigation Menu">☰</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Jobs</a></li>
+                    <li><a href="saved.html">Saved Jobs</a></li>
+                    <li><a href="submit.html" class="active">Post/Apply</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Submit a Developer Entry</h2>
+            <p>Post a open junior position or register as an applicant seeking work.</p>
+        </section>
+
+        <div class="form-container">
+            <!-- Submits to thanks.html (Form Action Page) using GET method -->
+            <form action="thanks.html" method="get">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name / Company Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Doe or TechCorp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role-type">Submission Type:</label>
+                    <select id="role-type" name="type" required>
+                        <option value="" disabled selected>Select an option...</option>
+                        <option value="job-listing">Post a New Job Opening</option>
+                        <option value="candidate-profile">Submit Developer Candidate Profile</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Title / Primary Skill:</label>
+                    <input type="text" id="title" name="title" placeholder="e.g. Junior Frontend Developer" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Details / Description:</label>
+                    <textarea id="notes" name="notes" rows="5"
+                        placeholder="Include relevant details, stack requirements, or background..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application / Posting</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> DevHub | WDD 231 Final Project</p>
+        <p>
+            <a href="attributions.html">Attributions</a> |
+            <a href="https://youtube.com/your-video-link" target="_blank" rel="noopener">Project Video Demo</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

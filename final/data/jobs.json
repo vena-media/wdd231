@@ -1,0 +1,137 @@
+[
+    {
+        "id": "job-1",
+        "title": "Junior Frontend Developer",
+        "company": "TechCorp",
+        "location": "Remote",
+        "type": "Full-time",
+        "salary": "$65,000 - $80,000",
+        "description": "Building accessible web user interfaces using HTML, CSS, and modern JavaScript."
+    },
+    {
+        "id": "job-2",
+        "title": "Web UI Developer",
+        "company": "PixelCraft Studios",
+        "location": "Hybrid",
+        "type": "Full-time",
+        "salary": "$70,000 - $85,000",
+        "description": "Responsible for translating UI designs into clean, responsive web components."
+    },
+    {
+        "id": "job-3",
+        "title": "Junior Web Engineer",
+        "company": "DataFlow Inc.",
+        "location": "On-site",
+        "type": "Contract",
+        "salary": "$55,000 - $65,000",
+        "description": "Maintain client dashboards, write DOM manipulation code, and debug web applications."
+    },
+    {
+        "id": "job-4",
+        "title": "Frontend Intern",
+        "company": "Nexus Solutions",
+        "location": "Remote",
+        "type": "Internship",
+        "salary": "$30 / hr",
+        "description": "Learn and work with ES modules, API integrations, and user experience enhancements."
+    },
+    {
+        "id": "job-5",
+        "title": "JavaScript Developer",
+        "company": "CloudScale",
+        "location": "Remote",
+        "type": "Full-time",
+        "salary": "$75,000 - $90,000",
+        "description": "Develop dynamic web client applications and connect REST APIs."
+    },
+    {
+        "id": "job-6",
+        "title": "Associate Web Developer",
+        "company": "Apex Media",
+        "location": "Hybrid",
+        "type": "Full-time",
+        "salary": "$60,000 - $72,000",
+        "description": "Assist with website updates, form validation, and responsive mobile layouts."
+    },
+    {
+        "id": "job-7",
+        "title": "UI Components Engineer",
+        "company": "BrightByte",
+        "location": "Remote",
+        "type": "Part-time",
+        "salary": "$40 / hr",
+        "description": "Create modular CSS and vanillajs components with high accessibility standards."
+    },
+    {
+        "id": "job-8",
+        "title": "Junior Web Architect",
+        "company": "Vanguard Tech",
+        "location": "On-site",
+        "type": "Full-time",
+        "salary": "$68,000 - $82,000",
+        "description": "Assist senior architects in maintaining structural semantic HTML and web security."
+    },
+    {
+        "id": "job-9",
+        "title": "Frontend Assistant",
+        "company": "Echo Systems",
+        "location": "Remote",
+        "type": "Part-time",
+        "salary": "$35 / hr",
+        "description": "Update landing pages, optimize images, and refine search engine optimization tags."
+    },
+    {
+        "id": "job-10",
+        "title": "Web Application Trainee",
+        "company": "InnoSoft",
+        "location": "Hybrid",
+        "type": "Internship",
+        "salary": "$25 / hr",
+        "description": "Participate in code reviews, write unit tests, and build client-side interfaces."
+    },
+    {
+        "id": "job-11",
+        "title": "Junior Web Specialist",
+        "company": "Omni Group",
+        "location": "Remote",
+        "type": "Full-time",
+        "salary": "$62,000 - $74,000",
+        "description": "Optimize client site performance to maintain low overall page download weight."
+    },
+    {
+        "id": "job-12",
+        "title": "Frontend Quality Specialist",
+        "company": "TestWorks",
+        "location": "On-site",
+        "type": "Full-time",
+        "salary": "$64,000 - $78,000",
+        "description": "Perform cross-browser testing and accessibility audits across mobile and desktop views."
+    },
+    {
+        "id": "job-13",
+        "title": "Web Support Developer",
+        "company": "Core Logic",
+        "location": "Remote",
+        "type": "Full-time",
+        "salary": "$58,000 - $70,000",
+        "description": "Troubleshoot dynamic JS functionality and maintain existing web interface codebases."
+    },
+    {
+        "id": "job-14",
+        "title": "Junior UI Developer",
+        "company": "Zenith Interactive",
+        "location": "Hybrid",
+        "type": "Contract",
+        "salary": "$50 / hr",
+        "description": "Convert design specs into clean markup and style sheets using modern CSS layouts."
+    },
+    {
+        "id": "job-15",
+        "title": "Client-Side Engineer",
+        "company": "Horizon Web",
+        "location": "Remote",
+        "type": "Full-time",
+        "salary": "$72,000 - $88,000",
+        "description": "Implement local storage caching, modal dialog features, and event handling routines."
+    }
+]
